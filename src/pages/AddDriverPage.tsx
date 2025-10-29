@@ -45,14 +45,13 @@ const AddDriverPage = () => {
 
       {/* Content */}
       <main className="flex-1 px-6">
-        <div className="pt-6 space-y-2">
-          <button
-            onClick={() => navigate(-1)}
-            className="mb-4 flex items-center gap-2 text-primary hover:opacity-80 transition-opacity"
-          >
-            <ArrowLeft size={20} />
-            <span className="text-sm font-medium">Back</span>
-          </button>
+        <button
+          onClick={() => navigate(-1)}
+          className="pt-6 pb-4 flex items-center gap-2 text-foreground hover:opacity-70 transition-opacity"
+        >
+          <ArrowLeft size={24} />
+        </button>
+        <div className="space-y-2">
           <h1 className="text-3xl font-bold text-foreground">
             Add Authorized Driver
           </h1>
