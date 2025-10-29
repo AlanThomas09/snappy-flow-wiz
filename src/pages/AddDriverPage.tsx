@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
-import { ArrowLeft } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 
 const AddDriverPage = () => {
   const navigate = useNavigate();
@@ -49,7 +49,7 @@ const AddDriverPage = () => {
           onClick={() => navigate(-1)}
           className="pt-6 pb-4 flex items-center gap-2 text-foreground hover:opacity-70 transition-opacity"
         >
-          <ArrowLeft size={24} />
+          <ChevronLeft size={24} />
         </button>
         <div className="space-y-2">
           <h1 className="text-3xl font-bold text-foreground">
