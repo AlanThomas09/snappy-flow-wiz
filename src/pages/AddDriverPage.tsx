@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
+import { ArrowLeft } from "lucide-react";
 
 const AddDriverPage = () => {
   const navigate = useNavigate();
@@ -45,6 +46,13 @@ const AddDriverPage = () => {
       {/* Content */}
       <main className="flex-1 px-6">
         <div className="pt-6 space-y-2">
+          <button
+            onClick={() => navigate(-1)}
+            className="mb-4 flex items-center gap-2 text-primary hover:opacity-80 transition-opacity"
+          >
+            <ArrowLeft size={20} />
+            <span className="text-sm font-medium">Back</span>
+          </button>
           <h1 className="text-3xl font-bold text-foreground">
             Add Authorized Driver
           </h1>
